@@ -1,0 +1,9 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+gazelle(
+    name = "gazelle",
+    args = [
+        "-go_prefix=github.com/hoangminhphuc/goph-shop",  # Replace with your actual module path
+    ],
+    visibility = ["//visibility:public"],
+)
